@@ -1,0 +1,35 @@
+#news_detail .flex {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	color: #673b21;
+	margin: 100px 0;
+}
+
+#news_detail .flex h3 {
+	font-size: 1.5rem;
+	background: linear-gradient(transparent 60%, #ffe1ce 60%);
+}
+
+#news_detail .flex p {
+	line-height: 2;
+}
+
+#news_detail .flex p span {
+	color: red;
+}
+
+#news_detail .flex img {
+	width: 500px;
+}
+
+
+@media screen and (max-width: 960px) {
+	#news_detail .flex img {
+		width: 100%;
+	}
+
+	#news_detail .flex {
+		display: block;
+	}
+}

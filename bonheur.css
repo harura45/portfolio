@@ -1,0 +1,80 @@
+#bonheur {
+	font-size: 1rem;
+	margin: 0;
+}
+
+#bonheur .line {
+	width: 1200px;
+	margin: 0 auto;
+	display: block;
+}
+
+#bonheur .flex {
+	width: 1200px;
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#bonheur .flex div table tr {
+	height: 50px;
+}
+
+#bonheur .flex div {
+	margin: 0 auto;
+	color: #673b21;
+
+}
+
+#bonheur .flex div table tr th {
+	width: 100px;
+	background-color: #b9e2e2;
+}
+
+#bonheur .flex div table tr td {
+	background-color: #ddd5cc;
+	width: 300px;
+	padding: 10px;
+
+}
+
+#bonheur img {
+	width: 500px;
+}
+
+#bonheur p {
+	color: #673b21;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+@media screen and (max-width: 960px) {
+	#bonheur .flex {
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+
+	#bonheur img {
+		width: 100%;
+	}
+
+	#bonheur .line {
+		width: 100%;
+		margin: 50px 0;
+	}
+
+	#bonheur p {
+		margin: 20px;
+	}
+
+	#bonheur table {
+		width: 100%;
+	}
+
+	#bonheur iframe {
+		margin-top: 20px;
+		width: 100%;
+	}
+}

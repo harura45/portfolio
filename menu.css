@@ -1,0 +1,84 @@
+header {
+	top: -80px;
+}
+
+#menu {
+	margin-bottom: 100px;
+	padding: 0 50px;
+}
+
+#menu h2 {
+	font-size: 1rem;
+	margin: 0;
+}
+
+#menu .flex {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	flex-wrap: wrap;
+}
+
+#menu .item {
+	width: 250px;
+	height: 350px;
+	color: #fff;
+	position: relative;
+	box-shadow: 0 0 10px #afafaf;
+	border: 10px solid #fff;
+
+}
+
+#menu .new::after {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	top: 10px;
+	left: -30px;
+	background-image: url('img/new.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+#menu .flex .item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#menu .flex .item .text {
+	background-color: #663b207a;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	font-family: "Kiwi Maru", serif;
+
+}
+
+
+@media screen and (max-width: 960px) {
+	#menu .flex {
+		width: 100%;
+		gap: 20px 10px;
+	}
+
+	#menu .item {
+		width: 150px;
+		height: 250px;
+	}
+
+	#menu .flex .item img {
+		width: 100%;
+		height: 100%;
+	}
+
+	#menu .new::after {
+		left: -15px;
+	}
+
+}

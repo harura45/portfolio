@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bonheur</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+<?php 
+ include("header.inc");
+ ?>
+<body>
+	<section id="contact">
+		<h1>お問い合わせ</h1>
+		<form action="/submit_form" method="post">
+			<label for="name">お名前</label>
+			<input type="text" id="name" name="name" required><br><br>
+			<label for="email">メールアドレス</label>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="email">電話番号</label>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="message">お問い合わせ内容</label>
+			<textarea id="message" name="message" rows="4" cols="80" required></textarea><br><br>
+			<input class="button" type="submit" value="送信">
+		</form>
+	</section>
+	<div id="page_top"><a href="#"></a></div>
+	<script src="https://code.jquery.com/jquery-4.0.0.js"
+		integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+<?php 
+ include("footer.inc");
+ ?>
+</html>
