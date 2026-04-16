@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bonheur</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+<?php 
+ include("header.inc");
+ ?>
+<body>
+	<section id="slider">
+		<ul class="slider">
+			<li class="slide"><img src="img/item/1.png" alt="img01"></li>
+			<li class="slide"><img src="img/img2.png" alt="img02"></li>
+			<li class="slide"><img src="img/item/12.png" alt="img03"></li>
+			<li class="slide"><img src="img/item/7.png" alt="img04"></li>
+			<li class="slide"><img src="img/item/10.png" alt="img05"></li>
+			<li class="slide"><img src="img/item/11.png" alt="img06"></li>
+		</ul>
+	</section>
+	<section id="newitem">
+		<h1>新商品</h1>
+		<div class="flex">
+			<div class="item">
+				<img src="img/item/1.png" alt="">
+				<div class="text">
+					<h2>濃厚チョコレートケーキ</h2>
+					<span>￥780</span>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/item/8.png" alt="">
+				<div class="text">
+					<h2>苺タルト</h2>
+					<span>￥840</span>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/item/3.png" alt="">
+				<div class="text">
+					<h2>レモンケーキ</h2>
+					<span>￥650</span>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/item/4.png" alt="">
+				<div class="text">
+					<h2>モンブラン</h2>
+					<span>￥840</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="news">
+		<h1>ニュース</h1>
+		<div class="flex">
+			<a href="news_detail.html" class="item">
+				<img src="img/birthbay.png" alt="">
+				<div class="text">
+					<time>2026/2/20</time>
+					<span class="tag event"></span>
+					<h2>バースデーケーキのご予約開始しました！</h2>
+				</div>
+			</a>
+			<div class="item">
+				<img src="img/item/1.png" alt="">
+				<div class="text">
+					<time>2026/2/10</time>
+					<span class="tag new"></span>
+					<h2>超濃厚チョコレートケーキが期間限定で販売♪</h2>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/item/8.png" alt="">
+				<div class="text">
+					<time>2026/1/18</time>
+					<span class="tag new"></span>
+					<h2>旬の苺を贅沢に使ったタルト🍓</h2>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/notice.png" alt="">
+				<div class="text">
+					<time>2025/12/26</time>
+					<span class="tag notice"></span>
+					<h2>年末年始休業のお知らせ</h2>
+				</div>
+			</div>
+	</section>
+	<section id="concept">
+		<img class="sp_img" src="img/shop2.png" alt="">
+		<div class="flex top">
+			<img src="img/shop2.png" alt="">
+			<p>Bonheur（ボヌール）は、“本物の美味しさ”と“洗練された美しさ”を追求したパティスリーです。<br>
+				世界中から厳選した上質な素材を使用し、ひとつひとつ丁寧に仕立てたケーキは、繊細な味わいと気品ある佇まいを兼ね備えています。 <br>
+				特別な日を彩る一台として、大切な方への贈り物として、そして自分への上質なご褒美として。
+		</div>
+		<img class="sp_img" src="img/img3.png" alt="">
+		<div class="flex bottom">
+			<p>Bonheurは、味わう瞬間までも優雅な体験となる、真の贅沢をお届けします。<br> “幸せ”という名にふさわしい、格別のひとときをあなたへ。</p>
+			<img src="img/img3.png" alt="">
+		</div>
+	</section>
+	<section id="calendar">
+		<h1>営業スケジュール</h1>
+		<h2><span>■</span>…休業日</h2>
+		<?php 
+ include("calendar.php");
+ ?>
+	</section>
+	<div id="page_top"><a href="#"></a></div>
+	<script src="https://code.jquery.com/jquery-4.0.0.js"
+		integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+<?php 
+ include("footer.inc");
+ ?>
+</html>
