@@ -1,2 +1,2 @@
-# Bright HOUSE
-Bright HOUSEのコード
+# 明るいHOME
+明るいHOMEのコード
