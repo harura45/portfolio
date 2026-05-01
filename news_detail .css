@@ -8,7 +8,25 @@
 
 #news_detail .flex h3 {
 	font-size: 1.5rem;
-	background: linear-gradient(transparent 60%, #ffe1ce 60%);
+	/* background: linear-gradient(transparent 60%, #ffe1ce 60%); */
+	margin: 1em 0 1em;
+	padding: 26px 36px 26px 46px;
+	border-radius: 20px;
+	position: relative;
+	background: #eef1f2;
+}
+
+#news_detail .flex h3::before {
+	position: absolute;
+	top: 25%;
+	left: 20px;
+	width: 6px;
+	height: 50%;
+	content: '';
+	opacity: .2;
+	-ms-filter: "alpha(opacity=20)";
+	border-radius: 3px;
+	background: #5f7276;
 }
 
 #news_detail .flex p {
